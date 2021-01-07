@@ -1,5 +1,7 @@
 <h2> Hi, I'm V̵O̵N̵!</h2>
 <h5> ̶"̶T̶h̶e̶ ̶s̶p̶h̶i̶n̶x̶ ̶m̶e̶m̶b̶e̶r̶ ̶9̶"̶</h5>
+<h3>About Me</h3>
+<img src="https://media1.tenor.com/images/f1937d23d6375df261bcee2457390f66/tenor.gif?itemid=19838846"/>
 
 ```javascript
 import React from 'react'
