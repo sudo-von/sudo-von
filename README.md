@@ -1,7 +1,6 @@
 <h1> Hi, I'm V̵O̵N̵!</h1>
 <h4> ̶"̶T̶h̶e̶ ̶s̶p̶h̶i̶n̶x̶ ̶m̶e̶m̶b̶e̶r̶ ̶9̶"̶</h4>
 <h2 align="center>About Me</h2>
-
 <br>
 
 ```javascript
@@ -24,7 +23,7 @@ class SphinxMember extends React.Component {
         languages : ['Javascript', 'Typescript', 'PHP', 'Python', 'Golang'],
         tools : ['ReactJS','ReactNative','Angular','Express','Flask','Docker','SCSS','Webpack','Linux'],
         databases : ['MySQL', 'MongoDB'],
-        cyber_security_tech: ['Linux','Python','Golang', 'Offensive Web','Forensics', 'OSINT']
+        cyber_security_tech: ['Linux','Python','Golang','Offensive Web','Forensics', 'OSINT']
       }
     }
   }
@@ -34,7 +33,7 @@ class SphinxMember extends React.Component {
         <Navbar title='Profile'/>
         <Von bio={this.state.bio} skills={this.state.skills}/>
         <Footer/>
-       </React.Fragment>
+      </React.Fragment>
     );
   }
 }
