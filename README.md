@@ -48,6 +48,6 @@ class SphinxMember extends React.Component {
 </p>
 <p>
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudo-von&layout=compact&theme=material-palenight" alt="sudo-von" />
-</p>
+</p><br>
 <h4>Visitor's count</h4>
 <p><img src="https://profile-counter.glitch.me/{sudo-von}/count.svg" alt="sudo-von :: Visitor's Count" /></p>
