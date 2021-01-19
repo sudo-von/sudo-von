@@ -1,12 +1,12 @@
-<h2> Hi, I'm V̵O̵N̵!</h2>
-<h5> ̶"̶T̶h̶e̶ ̶s̶p̶h̶i̶n̶x̶ ̶m̶e̶m̶b̶e̶r̶ ̶9̶"̶</h5>
-<h3 style="text-align: center;">About Me</h3>
+<h1> Hi, I'm V̵O̵N̵!</h1>
+<h4> ̶"̶T̶h̶e̶ ̶s̶p̶h̶i̶n̶x̶ ̶m̶e̶m̶b̶e̶r̶ ̶9̶"̶</h4>
+<h2 align="center>About Me</h2>
 
 <br>
 
 ```javascript
 import React from 'react'
-import Von from '../components/Von';
+import Von from '../components/Profile/Von';
 
 class SphinxMember extends React.Component {
   constructor(props){
@@ -21,16 +21,20 @@ class SphinxMember extends React.Component {
         location : 'Saltillo, Coahuila'
       },
       skills: {
-        languages : ['Javascript', 'Typescript', 'PHP', 'Python'],
+        languages : ['Javascript', 'Typescript', 'PHP', 'Python', 'Golang'],
         tools : ['ReactJS','ReactNative','Angular','Express','Flask','Docker','SCSS','Webpack','Linux'],
         databases : ['MySQL', 'MongoDB'],
-        cyber_security_tech: ['Linux','Python','Offensive Web','Forensics']
+        cyber_security_tech: ['Linux','Python','Golang', 'Offensive Web','Forensics', 'OSINT']
       }
     }
   }
   render(){
     return(
-      <Von bio={this.state.bio} skills={this.state.skills}/>
+      <React.Fragment>
+        <Navbar title='Profile'/>
+        <Von bio={this.state.bio} skills={this.state.skills}/>
+        <Footer/>
+       </React.Fragment>
     );
   }
 }
@@ -39,7 +43,12 @@ class SphinxMember extends React.Component {
 [![Instagram](https://img.shields.io/badge/-von-yellow?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/developerjesus/)](https://www.instagram.com/developerjesus/)
 [![GitHub](https://img.shields.io/github/followers/sudo-von?label=follow&style=social)](https://github.com/sudo-von)
 
-<p>
+
+<p align="center">
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=sudo-von&show_icons=true&theme=material-palenight&include_all_commits=true&count_private=true" alt="sudo-von" />
+</p>
+<p align="center">
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudo-von&layout=compact&theme=material-palenight" alt="sudo-von" />
 </p>
+<p align="center">Visitor's count :eyes:</p>
+<p align="center"><img src="https://profile-counter.glitch.me/{sudo-von}/count.svg" alt="sudo-von :: Visitor's Count" /></p>
