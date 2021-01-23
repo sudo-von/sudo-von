@@ -6,6 +6,8 @@
 ```javascript
 import React from 'react'
 import Von from '../components/Profile/Von';
+import Navbar from '../components/Main/Navbar';
+import Footer from '../components/Main/Footer';
 
 class SphinxMember extends React.Component {
   constructor(props){
