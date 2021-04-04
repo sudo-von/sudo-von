@@ -1,4 +1,4 @@
-<h1> Hi, I'm V̵O̵N̵!</h1>
+<h1> Hi, I'm Sudo V̵O̵N̵!</h1>
 <h4> ̶"̶T̶h̶e̶ ̶s̶p̶h̶i̶n̶x̶ ̶m̶e̶m̶b̶e̶r̶ ̶9̶"̶</h4>
 <h2 align="center">About Me</h2>
 <br>
