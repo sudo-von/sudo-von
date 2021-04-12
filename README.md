@@ -9,6 +9,7 @@ import Von from '../components/Profile/Von';
 import Navbar from '../components/Main/Navbar';
 import Footer from '../components/Main/Footer';
 
+//TODO: change class to funcional comp with hooks
 class SphinxMember extends React.Component {
   constructor(props){
     super(props);
