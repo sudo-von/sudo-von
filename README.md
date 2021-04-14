@@ -4,16 +4,15 @@
 <br>
 
 ```javascript
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Von from '../components/Profile/Von';
 import Navbar from '../components/Main/Navbar';
 import Footer from '../components/Main/Footer';
+import Container from '../components/Main/Container';
 
-//TODO: change class to funcional comp with hooks
-class SphinxMember extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
+const getMember = ( { number } ) => {
+
+  const [ member, setMember ] = useState({
       bio : {
         name : 'Jesús Rodríguez',
         age : 23,
@@ -28,15 +27,29 @@ class SphinxMember extends React.Component {
         databases : ['MySQL', 'MongoDB'],
         cyber_security_tech: ['Linux','Python','Golang','Offensive Web','Forensics', 'OSINT']
       }
-    }
-  }
-  render(){
+  })
+  
+  const fetchMember = number => fetch(`http://localhost:3000/sphinx/member/${number}`).then(res => res.json()).then(member => setMember(member).catch(err => console.log(err))
+
+  useEffect(() => fetchMember(number), [])
+  
+  return { member }
+}
+
+const SphinxMember = ({ number }) {
+
+    const { member } = getMember(number)
+    const { bio, skills } = member
+    
     return(
-      <React.Fragment>
+      <Container>
         <Navbar title='Profile'/>
-        <Von bio={this.state.bio} skills={this.state.skills}/>
+        <h1>The spinx member {number}</h1>
+        { member && 
+          <Von bio={bio} skills={skills}/>
+        }
         <Footer/>
-      </React.Fragment>
+      </Container>
     );
   }
 }
