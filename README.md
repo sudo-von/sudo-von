@@ -5,10 +5,10 @@
 
 ```javascript
 import React, { useState, useEffect } from 'react'
-import Von from '../components/Profile/Von';
-import Navbar from '../components/Main/Navbar';
-import Footer from '../components/Main/Footer';
-import Container from '../components/Main/Container';
+import Von from '../components/Profile/Von/';
+import Navbar from '../components/Navbar/';
+import Footer from '../components/Footer/';
+import Container from '../components/Container/';
 
 const getMember = ( { number } ) => {
 
@@ -36,7 +36,7 @@ const getMember = ( { number } ) => {
   return { member }
 }
 
-const SphinxMember = ({ number }) {
+const SphinxMember = ({ number }) => {
 
     const { member } = getMember(number)
     const { bio, skills } = member
