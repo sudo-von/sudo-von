@@ -52,10 +52,23 @@ const User = ( { username='von' } ) => {
 
 export default User
 ```
-[![Linkedin](https://img.shields.io/badge/-von-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jes%C3%BAs-%C3%A1ngel-rodr%C3%ADguez-mart%C3%ADnez-84991a1b4/)](https://www.linkedin.com/in/jes%C3%BAs-%C3%A1ngel-rodr%C3%ADguez-mart%C3%ADnez-84991a1b4/)
-[![Instagram](https://img.shields.io/badge/-von-yellow?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/developerjesus/)](https://www.instagram.com/developerjesus/)
-[![GitHub](https://img.shields.io/github/followers/sudo-von?label=follow&style=social)](https://github.com/sudo-von)
 
+![Javascript](https://img.shields.io/badge/-JavaScript-181717?style=flat-square&logo=javascript)
+![NodeJS](https://img.shields.io/badge/-Nodejs-181717?style=flat-square&logo=Node.js)
+![ReactJS](https://img.shields.io/badge/-React-181717?style=flat-square&logo=react)
+![ReactNative](https://img.shields.io/badge/-ReactNative-181717?style=flat-square&logo=react)
+![Webpack](https://img.shields.io/badge/-Webpack-181717?style=flat-square&logo=webpack)
+![Golang](https://img.shields.io/badge/-Golang-181717?style=flat-square&logo=go)
+![Python](https://img.shields.io/badge/-Python-181717?style=flat-square&logo=Python)
+![MongoDB](https://img.shields.io/badge/-MongoDB-181717?style=flat-square&logo=mongodb)
+![MySQL](https://img.shields.io/badge/-MySQL-181717?style=flat-square&logo=mysql)
+![Docker](https://img.shields.io/badge/-Docker-181717?style=flat-square&logo=docker)
+![DockerCompose](https://img.shields.io/badge/-DockerCompose-181717?style=flat-square&logo=docker)
+![DigitalOcean](https://img.shields.io/badge/-DigitalOcean-181717?style=flat-square&logo=digitalocean)
+![Git](https://img.shields.io/badge/-Git-181717?style=flat-square&logo=git)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![GitLab](https://img.shields.io/badge/-GitLab-181717?style=flat-square&logo=gitlab)
+![GitHub](https://img.shields.io/badge/-Linux-181717?style=flat-square&logo=linux)
 
 <p>
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=sudo-von&show_icons=true&theme=material-palenight&include_all_commits=true&count_private=true" alt="sudo-von" />
@@ -63,5 +76,3 @@ export default User
 <p>
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudo-von&layout=compact&theme=material-palenight&count_private=false" alt="sudo-von" />
 </p><br>
-<h4>Visitor's count</h4>
-<p><img src="https://profile-counter.glitch.me/{sudo-von}/count.svg" alt="sudo-von :: Visitor's Count" /></p>
