@@ -27,6 +27,7 @@ Response:
 ```
 
 ```javascript
+import PropTypes from 'prop-types'
 /* Custom components. */
 import Container from 'components/Container'
 import Profile from './Components/Profile'
@@ -36,7 +37,7 @@ import Skills from './Components/Skills'
 /* Custom hooks. */
 import { useData } from 'hooks/useData'
 
-const User = ( { username='von' } ) => {
+const User = ( { username } ) => {
 
     const { data, loading, error } = useData(`users/username/${username}`)  
     const { username, name, age, company, location, achievements, skills } = data
@@ -57,6 +58,14 @@ const User = ( { username='von' } ) => {
             <Skills skills={skills}/>
         </Container>
     )
+}
+
+User.propTypes = {
+    username: PropTypes.string
+}
+
+User.defaultProps = {
+    username: 'von',
 }
 
 export default User
