@@ -62,19 +62,19 @@ const User = ( { username='von' } ) => {
 export default User
 ```
 
-![Javascript](https://img.shields.io/badge/-JavaScript-181717?style=flat-square&logo=javascript)<br/>
-![NodeJS](https://img.shields.io/badge/-Nodejs-181717?style=flat-square&logo=Node.js)<br/>
-![ReactJS](https://img.shields.io/badge/-React-181717?style=flat-square&logo=react)<br/>
-![ReactNative](https://img.shields.io/badge/-ReactNative-181717?style=flat-square&logo=react)<br/>
-![Webpack](https://img.shields.io/badge/-Webpack-181717?style=flat-square&logo=webpack)<br/>
-![Golang](https://img.shields.io/badge/-Golang-181717?style=flat-square&logo=go)<br/>
-![Python](https://img.shields.io/badge/-Python-181717?style=flat-square&logo=Python)<br/>
-![MongoDB](https://img.shields.io/badge/-MongoDB-181717?style=flat-square&logo=mongodb)<br/>
-![MySQL](https://img.shields.io/badge/-MySQL-181717?style=flat-square&logo=mysql)<br/>
-![Docker](https://img.shields.io/badge/-Docker-181717?style=flat-square&logo=docker)<br/>
-![DockerCompose](https://img.shields.io/badge/-DockerCompose-181717?style=flat-square&logo=docker)<br/>
-![DigitalOcean](https://img.shields.io/badge/-DigitalOcean-181717?style=flat-square&logo=digitalocean)<br/>
-![Git](https://img.shields.io/badge/-Git-181717?style=flat-square&logo=git)<br/>
-![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)<br/>
-![GitLab](https://img.shields.io/badge/-GitLab-181717?style=flat-square&logo=gitlab)<br/>
-![GitHub](https://img.shields.io/badge/-Linux-181717?style=flat-square&logo=linux)<br/>
+![Javascript](https://img.shields.io/badge/-JavaScript-181717?style=flat-square&logo=javascript)
+![NodeJS](https://img.shields.io/badge/-Nodejs-181717?style=flat-square&logo=Node.js)
+![ReactJS](https://img.shields.io/badge/-React-181717?style=flat-square&logo=react)
+![ReactNative](https://img.shields.io/badge/-ReactNative-181717?style=flat-square&logo=react)
+![Webpack](https://img.shields.io/badge/-Webpack-181717?style=flat-square&logo=webpack)
+![Golang](https://img.shields.io/badge/-Golang-181717?style=flat-square&logo=go)
+![Python](https://img.shields.io/badge/-Python-181717?style=flat-square&logo=Python)
+![MongoDB](https://img.shields.io/badge/-MongoDB-181717?style=flat-square&logo=mongodb)
+![MySQL](https://img.shields.io/badge/-MySQL-181717?style=flat-square&logo=mysql)
+![Docker](https://img.shields.io/badge/-Docker-181717?style=flat-square&logo=docker)
+![DockerCompose](https://img.shields.io/badge/-DockerCompose-181717?style=flat-square&logo=docker)
+![DigitalOcean](https://img.shields.io/badge/-DigitalOcean-181717?style=flat-square&logo=digitalocean)
+![Git](https://img.shields.io/badge/-Git-181717?style=flat-square&logo=git)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![GitLab](https://img.shields.io/badge/-GitLab-181717?style=flat-square&logo=gitlab)
+![GitHub](https://img.shields.io/badge/-Linux-181717?style=flat-square&logo=linux)
