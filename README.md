@@ -2,21 +2,21 @@
 <br>
 
 ```javascript
-/* TODO: Remove commented code. */
-const useDataResponseExample = {
-    bio : {
-      name : 'Jesús Rodríguez',
-      age : 24,
-      titles : ['Computer Systems Engineer','Ethical Hacker'],
-      certifications : ['C|EHSP de Ethical Hacking & Security Professional'],
-      company : 'Looking for a great job',
-      location : 'Saltillo, Coahuila'
+{   
+    "id" : "60603a5aaa037f0008ed81f9",
+    "bio" : {
+      "name" : "Jesús Rodríguez",
+      "age" : 24,
+      "titles" : ["Computer Systems Engineer","Software developer", "Ethical Hacker"],
+      "certifications" : ["C|EHSP de Ethical Hacking & Security Professional"],
+      "company" : "Looking for a great job",
+      "location" : "Saltillo, Coahuila"
     },
-    skills: {
-      languages : ['Javascript', 'Golang','PHP', 'Python'],
-      tools : ['ReactJS','ReactNative','Express','Docker','DockerCompose','Webpack','Linux','A lot of libraries and frameworks'],
-      databases : ['MySQL', 'MongoDB'],
-      cyber_security_tech: ['Linux','Python','Golang','Offensive Web','Forensics', 'OSINT']
+    "skills": {
+      "languages" : ["Javascript", "Golang","PHP", "Python"],
+      "tools" : ["ReactJS","ReactNative","Express","Docker","DockerCompose","Webpack","Linux","A lot of libraries and frameworks"],
+      "databases" : ["MySQL", "MongoDB"],
+      "cyber_security_tech": ["Linux","Python","Golang","Offensive Web","Forensics", "OSINT"]
     }
 }
 ```
