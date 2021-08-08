@@ -30,6 +30,8 @@ Response:
 import PropTypes from 'prop-types'
 /* Custom components. */
 import Container from 'components/Container'
+import Loader from 'components/Loader'
+import Error from 'components/Error'
 import Profile from './Components/Profile'
 import Workplace from './Components/Workplace'
 import Achievements from './Components/Achievements'
