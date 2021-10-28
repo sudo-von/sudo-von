@@ -1,5 +1,4 @@
 <h2 align="center">About Me</h2>
-<br>
 
 ```javascript
 Request URL: http://sudovon.com:3000/users/username/von
