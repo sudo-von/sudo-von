@@ -10,7 +10,7 @@ Response:
     "username": "von",
     "name" : "Jesús Rodríguez",
     "age" : 24,
-    "company" : "Looking for a great job",
+    "company" : "Software developer for Intel Corporation",
     "location" : "Saltillo, Coahuila"
     "achievements" : {
       "titles" : ["Computer Systems Engineer","Software developer","Ethical Hacker"],
