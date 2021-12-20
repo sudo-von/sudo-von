@@ -11,14 +11,14 @@ Response:
     "name" : "Jesús Rodríguez",
     "age" : 24,
     "company" : "Software developer for Intel Corporation",
-    "location" : "Saltillo, Coahuila"
+    "location" : "Monclova, Coahuila"
     "achievements" : {
       "titles" : ["Computer Systems Engineer","Software developer","Ethical Hacker"],
       "certifications" : ["C|EHSP de Ethical Hacking & Security Professional"]
     },
     "skills": {
-      "languages" : ["Javascript","Golang","PHP","Python"],
-      "development_tools" : ["ReactJS","ReactNative","Express","Docker","DockerCompose","Webpack","Linux","Git","A lot of libraries and frameworks"],
+      "languages" : ["Javascript","Golang","PHP","Python","C#"],
+      "development_tools" : ["ReactJS","ReactNative","Express","Docker","DockerCompose","Webpack","Linux","Git","A lot of libraries and frameworks", ...rest],
       "databases" : ["MySQL", "MongoDB"],
       "cybersecurity_tools": ["Linux","Python","Golang","Offensive Web","Forensics", "OSINT"]
     }
