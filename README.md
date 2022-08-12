@@ -1,5 +1,24 @@
 <h2 align="center">About Me</h2>
 
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+
+![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+
 ```javascript
 Request URL: http://sudovon.com:3000/users/username/von
 Request Method: GET
@@ -71,20 +90,3 @@ User.defaultProps = {
 
 export default User
 ```
-
-![Javascript](https://img.shields.io/badge/-JavaScript-181717?style=flat-square&logo=javascript)
-![NodeJS](https://img.shields.io/badge/-Nodejs-181717?style=flat-square&logo=Node.js)
-![ReactJS](https://img.shields.io/badge/-React-181717?style=flat-square&logo=react)
-![ReactNative](https://img.shields.io/badge/-ReactNative-181717?style=flat-square&logo=react)
-![Webpack](https://img.shields.io/badge/-Webpack-181717?style=flat-square&logo=webpack)
-![Golang](https://img.shields.io/badge/-Golang-181717?style=flat-square&logo=go)
-![Python](https://img.shields.io/badge/-Python-181717?style=flat-square&logo=Python)
-![MongoDB](https://img.shields.io/badge/-MongoDB-181717?style=flat-square&logo=mongodb)
-![MySQL](https://img.shields.io/badge/-MySQL-181717?style=flat-square&logo=mysql)
-![Docker](https://img.shields.io/badge/-Docker-181717?style=flat-square&logo=docker)
-![DockerCompose](https://img.shields.io/badge/-DockerCompose-181717?style=flat-square&logo=docker)
-![DigitalOcean](https://img.shields.io/badge/-DigitalOcean-181717?style=flat-square&logo=digitalocean)
-![Git](https://img.shields.io/badge/-Git-181717?style=flat-square&logo=git)
-![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
-![GitLab](https://img.shields.io/badge/-GitLab-181717?style=flat-square&logo=gitlab)
-![GitHub](https://img.shields.io/badge/-Linux-181717?style=flat-square&logo=linux)
