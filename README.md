@@ -54,7 +54,7 @@ export default Profile;
 ```
 
 
-[![Sudo-von's GitHub stats](https://github-readme-stats.vercel.app/api?username=sudo-vom)](https://github.com/sudo-von/github-readme-stats)
+[![Sudo-von's GitHub stats](https://github-readme-stats.vercel.app/api?username=sudo-von)](https://github.com/sudo-von/github-readme-stats)
 
 
 <h2 align="center">About Me</h2>
