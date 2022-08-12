@@ -19,6 +19,8 @@ Response:
 ```
 
 ```typescript
+import { FC } from 'react';
+import { UserProps } from '@props';
 import {
     User,
     Workplace,
@@ -29,7 +31,7 @@ interface ProfileProps {
     user: UserProps;
 };
 
-const Profile: React.FC<ProfileProps> = ({ user }): JSX.Element => {
+const Profile:FC<ProfileProps> = ({ user }): JSX.Element => {
     const { username, name, age, job, title, certifications } = user;
     return(
         <>
