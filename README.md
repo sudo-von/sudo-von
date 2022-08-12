@@ -1,3 +1,58 @@
+
+```javascript
+Request URL: https://sudo-von.com:3000/users/username/von
+Request Method: GET
+Status Code: 200 OK
+Response:
+{   
+    "id" : "60603a5aaa037f0008ed81f9",
+    "username": "sudo-von",
+    "name" : "Jesús Ángel Rodríguez Martínez",
+    "age" : 25,
+    "job": {
+        "company" : "Intel Corporation",
+        "positions": ["Software developer", "Software application development engineer", "Cyber security researcher"],
+        "location" : "Guadalajara, Jalisco"
+    },
+    "title": "Computer systems engineer",
+    "certifications" : ["C|EHSP de Ethical Hacking & Security Professional"]
+}
+```
+
+```typescript
+import {
+    User,
+    Workplace,
+    Achievements
+} from '@components';
+
+interface ProfileProps {
+    user: UserProps;
+};
+
+const Profile: React.FC<ProfileProps> = ({ user }): JSX.Element => {
+    const { username, name, age, job, title, certifications } = user;
+    return(
+        <>
+            <User
+                username={username}
+                name={name}
+                age={age}
+            />
+            <Workplace
+                job={job}
+            />
+            <Achievements
+                title={title}
+                certifications={certifications}
+            />
+        </>
+    );
+};
+
+export default Profile;
+```
+
 <h2 align="center">About Me</h2>
 
 ### 🔨 Tools
@@ -54,77 +109,3 @@
 ![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)
 ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
 
-
-
-
-```javascript
-Request URL: http://sudovon.com:3000/users/username/von
-Request Method: GET
-Status Code: 200 OK
-Response:
-{   
-    "id" : "60603a5aaa037f0008ed81f9",
-    "username": "von",
-    "name" : "Jesús Rodríguez",
-    "age" : 24,
-    "company" : "Software developer for Intel Corporation",
-    "location" : "Monclova, Coahuila"
-    "achievements" : {
-      "titles" : ["Computer Systems Engineer","Software developer","Ethical Hacker"],
-      "certifications" : ["C|EHSP de Ethical Hacking & Security Professional"]
-    },
-    "skills": {
-      "languages" : ["Javascript","Golang","PHP","Python","C#"],
-      "development_tools" : ["ReactJS","ReactNative","Express","Docker","DockerCompose","Webpack","Linux","Git","A lot of libraries and frameworks", ...rest],
-      "databases" : ["MySQL", "MongoDB"],
-      "cybersecurity_tools": ["Linux","Python","Golang","Offensive Web","Forensics", "OSINT"]
-    }
-}
-```
-
-```javascript
-import PropTypes from 'prop-types'
-/* Custom components. */
-import Container from 'components/Container'
-import Loader from 'components/Loader'
-import Error from 'components/Error'
-import Profile from './Components/Profile'
-import Workplace from './Components/Workplace'
-import Achievements from './Components/Achievements'
-import Skills from './Components/Skills'
-/* Custom hooks. */
-import { useData } from 'hooks/useData'
-
-const User = ( { username } ) => {
-
-    const { data, loading, error } = useData(`users/username/${username}`)  
-    const { username, name, age, company, location, achievements, skills } = data
-
-    if(loading){
-        return <Loader message='Loading profile'/>
-    }
-
-    if(error){
-        return <Error message={error}/>
-    }
-
-    return(
-        <Container>
-            <Profile username={username} name={name} age={age}/>
-            <Workplace company={company} location={location}/>
-            <Achievements achievements={achievements}/>
-            <Skills skills={skills}/>
-        </Container>
-    )
-}
-
-User.propTypes = {
-    username: PropTypes.string
-}
-
-User.defaultProps = {
-    username: 'von',
-}
-
-export default User
-```
