@@ -1,5 +1,5 @@
 ```javascript
-Request URL: https://sudo-von.com:3000/users/username/von
+Request URL: https://sudo-von.com:3000/user/von
 Request Method: GET
 Status Code: 200 OK
 Response:
@@ -10,8 +10,8 @@ Response:
     "age" : 25,
     "job": {
         "company" : "Intel Corporation",
-        "positions": ["Software developer", "Software application development engineer", "Cyber security researcher"],
-        "location" : "Guadalajara, Jalisco"
+        "positions": ["Full stack developer", "Software engineer", "Cyber security researcher"],
+        "location" : "🇲🇽"
     },
     "title": "Computer systems engineer",
     "certifications" : ["C|EHSP de Ethical Hacking & Security Professional"]
