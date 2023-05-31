@@ -7,7 +7,7 @@ Response:
     "id" : "60603a5aaa037f0008ed81f9",
     "username": "sudo-von",
     "name" : "Jesús Ángel Rodríguez Martínez",
-    "age" : 25,
+    "age" : 26,
     "job": {
         "company" : "Intel Corporation",
         "positions": ["Full stack developer", "Software engineer", "Cyber security researcher"],
