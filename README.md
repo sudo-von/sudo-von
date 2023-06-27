@@ -1,47 +1,68 @@
-```javascript
-Request URL: https://sudo-von.com:3000/user/von
-Request Method: GET
-Status Code: 200 OK
-Response:
-{   
-    "id" : "60603a5aaa037f0008ed81f9",
-    "username": "sudo-von",
-    "name" : "Jesús Ángel Rodríguez Martínez",
-    "age" : 26,
-    "job": {
-        "company" : "Intel Corporation",
-        "positions": ["Full stack developer", "Software engineer", "Cyber security researcher"],
-        "location" : "🇲🇽"
+```typescript
+{
+    "request": {
+        "url": "https://sudo-von.com/api/v1/user/username/sudo-von",
+        "method": "GET"
     },
-    "title": "Computer systems engineer",
-    "certifications" : ["C|EHSP de Ethical Hacking & Security Professional"]
+    "response": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        }
+    },
+    "data": {
+        "id": "60603a5aaa037f0008ed81f9",
+        "name": "Jesús Ángel Rodríguez Martínez",
+        "email": "sudo.von.contact@gmail.com"
+        "username": "sudo-von",
+        "age": 26,
+        "workplace": {
+            "company": "Intel Corporation",
+            "location": "Mexico",
+            "positions": [
+                "Subject matter expert",
+                "Full stack engineer",
+                "Cyber Security researcher"
+            ],
+        },
+        "title": "Computer systems engineer",
+        "certifications": [
+            "Certified ethical hacker and security professional (C|EHSP)"
+        ]
+    }
 }
 ```
 
 ```typescript
 import { FC } from 'react';
-import { UserProps } from '@props';
-import {
-    User,
-    Workplace,
-    Achievements
-} from '@components';
+import { useUser } from '@user/hooks';
+import { Profile, Workplace, Achievements } from '@user/components';
 
-interface ProfileProps {
-    user: UserProps;
+type UserProps = {
+    username: string;
 };
 
-const Profile:FC<ProfileProps> = ({ user }): JSX.Element => {
-    const { username, name, age, job, title, certifications } = user;
+const User: FC<UserProps> = ({ username = 'sudo-von' }) => {
+    const { data, isLoading, error } = useUser(username);
+
+    if (isLoading) return <Loader />;
+
+    if (error) return <Error message={error} />;
+
+    const { name, email, username, age, job, title, certifications } = data;
+
     return(
         <>
-            <User
-                username={username}
-                name={name}
+            <Profile
                 age={age}
+                name={name}
+                email={email}
+                username={username}
             />
             <Workplace
-                job={job}
+                company={company}
+                location={location}
+                positions={positions}
             />
             <Achievements
                 title={title}
@@ -51,5 +72,5 @@ const Profile:FC<ProfileProps> = ({ user }): JSX.Element => {
     );
 };
 
-export default Profile;
+export default User;
 ```
