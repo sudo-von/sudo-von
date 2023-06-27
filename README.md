@@ -1,18 +1,14 @@
-<h2 align="center">About me</h2>
+<img src="svg/header.svg"  alt="header" />
+
+```javascript
+curl -X GET \
+    -H "Content-Type: application/json" \
+    "https://sudo-von.com/api/v1/user/username/sudo-von"
+```
 
 ```typescript
 {
-    "request": {
-        "url": "https://sudo-von.com/api/v1/user/username/sudo-von",
-        "method": "GET",
-    },
-    "response": {
-        "status": {
-            "code": 200,
-            "message": "OK",
-        },
-    },
-    "data": {
+    "result": {
         "id": "60603a5aaa037f0008ed81f9",
         "name": "Jesús Ángel Rodríguez Martínez",
         "email": "sudo.von.contact@gmail.com",
@@ -24,18 +20,18 @@
             "positions": [
                 "Full stack engineer",
                 "Cybersecurity researcher",
-                "Frontend subject matter expert",
-            ],
+                "Frontend subject matter expert"
+            ]
         },
         "title": "Computer systems engineer",
         "certifications": [
             "Certified ethical hacker and security professional (C|EHSP)"
-        ],
+        ]
     }
 }
 ```
 
-```typescript
+```tsx
 import { FC } from 'react';
 import { useUser } from '@user/hooks';
 import { Loader, Error } from '@components';
