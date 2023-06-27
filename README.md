@@ -59,11 +59,11 @@ const User: FC<UserProps> = ({ id }) => {
     const { name, email, username, workplaces, about } = data;
 
     return(
-    <>
-        <Profile name={name} email={email} username={username} />
-        <Workplaces workplaces={workplaces} />
-        <About about={about}/>
-    </>
+        <>
+            <Profile name={name} email={email} username={username} />
+            <Workplaces workplaces={workplaces} />
+            <About about={about}/>
+        </>
     );
 };
 
