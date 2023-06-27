@@ -64,7 +64,10 @@ rect.headerRect {
 .gooeff {
   	filter: url(#goo);
 }
-
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+}
 #wave3 {
   animation-duration: 7s;
   opacity:.3;
