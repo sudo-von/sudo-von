@@ -22,17 +22,17 @@ svg {
 }
 
 rect.headerRect {
-  fill: #e0c60b;
+  fill: #e7e741;
 }
 
 .wave {
   animation: wave 3s linear;
   animation-iteration-count:infinite;
-  fill: #e0c60b;
+  fill: #e7e741;
 }
 
 .drop {
-  fill: #e0c60b;
+  fill: #e7e741;
   animation: drop 8.2s linear infinite normal;
   transform: translateY(25px) ;
   transform-box: fill-box;
