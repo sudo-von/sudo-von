@@ -28,7 +28,7 @@ curl -X GET \
             "company": "Evotek",
             "positions": ["Full stack developer"]
         },
-    ]
+    ],
     "about": {
         "title": "Computer systems engineer",
         "position": "Software developer",
