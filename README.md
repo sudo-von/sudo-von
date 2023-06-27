@@ -2,13 +2,13 @@
 {
     "request": {
         "url": "https://sudo-von.com/api/v1/user/username/sudo-von",
-        "method": "GET"
+        "method": "GET",
     },
     "response": {
         "status": {
             "code": 200,
-            "message": "OK"
-        }
+            "message": "OK",
+        },
     },
     "data": {
         "id": "60603a5aaa037f0008ed81f9",
@@ -20,31 +20,26 @@
             "company": "Intel Corporation",
             "location": "Mexico",
             "positions": [
-                "Subject matter expert",
                 "Full stack engineer",
-                "Cyber Security researcher"
+                "Cybersecurity researcher",
+                "Frontend subject matter expert",
             ],
         },
         "title": "Computer systems engineer",
         "certifications": [
             "Certified ethical hacker and security professional (C|EHSP)"
-        ]
+        ],
     }
 }
 ```
 
 ```typescript
-import { FC } from 'react';
 import { useUser } from '@user/hooks';
 import { Loader, Error } from '@components';
 import { Profile, Workplace, Achievements } from '@user/components';
 
-type UserProps = {
-    username: string;
-};
-
-const User: FC<UserProps> = ({ username = 'sudo-von' }) => {
-    const { data, isLoading, error } = useUser(username);
+const UserContainer: FC<UserProps> = () => {
+    const { data, isLoading, error } = useUser('sudo-von');
 
     if (isLoading) return <Loader />;
 
