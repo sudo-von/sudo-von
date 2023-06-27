@@ -62,7 +62,7 @@ const User: FC<UserProps> = ({ id }) => {
         <>
             <Profile name={name} email={email} username={username} />
             <Workplaces workplaces={workplaces} />
-            <About about={about}/>
+            <About about={about} />
         </>
     );
 };
