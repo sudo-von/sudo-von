@@ -1,3 +1,5 @@
+<h2 align="center">About me</h2>
+
 ```typescript
 {
     "request": {
@@ -77,3 +79,5 @@ const User: FC<UserProps> = ({ id }) => {
 
 export default User;
 ```
+
+<img src="https://lanyard.kyrie25.me/api/691166644395048960?waveColor=8B8BFA&waveSpotifyColor=B48EF7&gradient=7E37F9-B48EF7-E568C4&imgStyle=square"  />
