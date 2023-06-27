@@ -1,4 +1,4 @@
-<img src="svg/header.svg"  alt="header" />
+<img src="svg/header.svg"  alt="Header image" />
 
 ```javascript
 curl -X GET \
@@ -8,25 +8,33 @@ curl -X GET \
 
 ```typescript
 {
-    "result": {
-        "id": "60603a5aaa037f0008ed81f9",
-        "name": "Jesús Ángel Rodríguez Martínez",
-        "email": "sudo.von.contact@gmail.com",
-        "username": "sudo-von",
-        "age": 26,
-        "workplace": {
+    "id": "60603a5aaa037f0008ed81f9",
+    "name": "Jesús Ángel Rodríguez Martínez",
+    "email": "sudo.von.contact@gmail.com",
+    "username": "sudo-von",
+    "workplaces": [
+        {
+            "id": "649b478da7e8c4033849e8a7",
             "company": "Intel Corporation",
-            "location": "Mexico",
-            "positions": [
-                "Full stack engineer",
-                "Cybersecurity researcher",
-                "Frontend subject matter expert"
-            ]
+            "positions": ["Full stack engineer", "Cybersecurity researcher", "Frontend subject matter expert"]
         },
+        {
+            "id": "649b4806d1a3e5ddcdbd4c00",
+            "company": "Tredicom",
+            "positions": ["Full stack developer"]
+        },
+        {
+            "id": "649b4806d1a3e5ddcdbd4c00",
+            "company": "Evotek",
+            "positions": ["Full stack developer"]
+        },
+    ]
+    "about": {
         "title": "Computer systems engineer",
-        "certifications": [
-            "Certified ethical hacker and security professional (C|EHSP)"
-        ]
+        "position": "Software developer",
+        "certifications": ["Certified ethical hacker and security professional (C|EHSP)"],
+        "interests": ["Javascript fanatic", "Typescript enthusiast", "Ethical hacking lover"],
+        "quote": "At first, dreams seem impossible, then improbable, and eventually inevitable"
     }
 }
 ```
@@ -34,8 +42,8 @@ curl -X GET \
 ```tsx
 import { FC } from 'react';
 import { useUser } from '@user/hooks';
-import { Loader, Error } from '@components';
-import { Profile, Workplace, Achievements } from '@user/components';
+import { Loader, Error } from '@common/components';
+import { Profile, Workplaces, About } from '@user/components';
 
 type UserProps = {
     id: string;
@@ -48,28 +56,14 @@ const User: FC<UserProps> = ({ id }) => {
 
     if (error) return <Error message={error} />;
 
-    const { name, email, username, age, workplace, title, certifications } = data;
-
-    const { company, location, positions } = workplace;
+    const { name, email, username, workplaces, about } = data;
 
     return(
-        <>
-            <Profile
-                age={age}
-                name={name}
-                email={email}
-                username={username}
-            />
-            <Workplace
-                company={company}
-                location={location}
-                positions={positions}
-            />
-            <Achievements
-                title={title}
-                certifications={certifications}
-            />
-        </>
+    <>
+        <Profile name={name} email={email} username={username} />
+        <Workplaces workplaces={workplaces} />
+        <About about={about}/>
+    </>
     );
 };
 
