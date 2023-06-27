@@ -64,11 +64,7 @@ rect.headerRect {
 .gooeff {
   	filter: url(#goo);
 }
-#wave2 {
-  animation-duration:5s;
-  animation-direction: reverse;
-  opacity: .6
-}
+
 #wave3 {
   animation-duration: 7s;
   opacity:.3;
@@ -152,7 +148,7 @@ g.typingUnderline rect {
     <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
     <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
       
-    <use id=  "wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+    <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
   </g>  
 
 <rect class="headerRect" width="70" height="7.3" rx="1" x="20" y="16.8"/>
