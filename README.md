@@ -34,18 +34,25 @@
 ```
 
 ```typescript
+import { FC } from 'react';
 import { useUser } from '@user/hooks';
 import { Loader, Error } from '@components';
 import { Profile, Workplace, Achievements } from '@user/components';
 
-const UserContainer: FC<UserProps> = () => {
-    const { data, isLoading, error } = useUser('sudo-von');
+type UserProps = {
+    id: string;
+};
+
+const User: FC<UserProps> = ({ id }) => {
+    const { data, isLoading, error } = useUser(id);
 
     if (isLoading) return <Loader />;
 
     if (error) return <Error message={error} />;
 
-    const { name, email, username, age, job, title, certifications } = data;
+    const { name, email, username, age, workplace, title, certifications } = data;
+
+    const { company, location, positions } = workplace;
 
     return(
         <>
