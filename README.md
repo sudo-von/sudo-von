@@ -1,5 +1,3 @@
-<img src="svg/header.svg"  alt="header" />
-
 ```javascript
 curl -X GET \
     -H "Content-Type: application/json" \
