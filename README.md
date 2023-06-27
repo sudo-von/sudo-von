@@ -13,7 +13,7 @@
     "data": {
         "id": "60603a5aaa037f0008ed81f9",
         "name": "Jesús Ángel Rodríguez Martínez",
-        "email": "sudo.von.contact@gmail.com"
+        "email": "sudo.von.contact@gmail.com",
         "username": "sudo-von",
         "age": 26,
         "workplace": {
@@ -36,6 +36,7 @@
 ```typescript
 import { FC } from 'react';
 import { useUser } from '@user/hooks';
+import { Loader, Error } from '@components';
 import { Profile, Workplace, Achievements } from '@user/components';
 
 type UserProps = {
