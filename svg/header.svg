@@ -3,7 +3,7 @@
 <style>
 
 svg text {
-text-shadow: revert;
+  text-shadow: revert;
   text-shadow: 1px 2px 2px white;
   transform-origin: 50% 50%;
   transform: translate(0%, -40%) rotate(180deg);
@@ -37,8 +37,6 @@ rect.headerRect {
   transform: translateY(25px) ;
   transform-box: fill-box;
   transform-origin: 50% 100%;
-}
-.drop1 {
 }
 
 .drop2 {
@@ -154,25 +152,24 @@ g.typingUnderline rect {
     <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
   </g>  
 
-<rect class="headerRect" width="70" height="7.3" rx="1" x="20" y="16.8"/>
+  <rect class="headerRect" width="70" height="7.3" rx="1" x="20" y="16.8"/>
 
-<path id="nameTyping">
-  <animate attributeName="d" from="m36,-6 h0" to="m36,-6 h100" dur="6s" begin="0s" fill="freeze"/>
-</path>
+  <path id="nameTyping">
+    <animate attributeName="d" from="m36,-6 h0" to="m36,-6 h100" dur="6s" begin="0s" fill="freeze"/>
+  </path>
+  <text font-family="Lexend" font-size=".18em" fill="black" font-weight="bold">
+    <textPath xlink:href="#nameTyping" >
+      Jesús Ángel Rodríguez Martínez
+    </textPath>
+  </text>
 
-<text font-family="Lexend" font-size=".18em" fill="black" font-weight="bold">
-  <textPath xlink:href="#nameTyping" >
-    Jesús Ángel Rodríguez Martínez
-  </textPath>
-</text>
-
-<path id="descriptionTyping">
-  <animate attributeName="d" from="m22.9,-3 h0" to="m22.9,-3 h100" dur="5s" begin="2.8s" fill="freeze"/>
-</path>
-<text x="64" font-family="Lexend" font-size=".12em" fill="black" text-anchor="end" > 
-  <textPath xlink:href="#descriptionTyping" >
-    Transforming ideas into reality with the magic of JS and TS.
-  </textPath>
-</text>
+  <path id="descriptionTyping">
+    <animate attributeName="d" from="m22.9,-3 h0" to="m22.9,-3 h100" dur="5s" begin="2.8s" fill="freeze"/>
+  </path>
+  <text x="64" font-family="Lexend" font-size=".12em" fill="black" text-anchor="end" > 
+    <textPath xlink:href="#descriptionTyping" >
+      Transforming ideas into reality with the magic of JS and TS.
+    </textPath>
+  </text>
 
 </svg>
