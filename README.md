@@ -33,7 +33,7 @@ curl -X GET \
         "title": "Computer systems engineer",
         "position": "Software developer",
         "certifications": ["Certified ethical hacker and security professional (C|EHSP)"],
-        "interests": ["Javascript fanatic", "Typescript enthusiast", "Ethical hacking lover"],
+        "interests": ["Javascript fanatic", "Typescript enthusiast", "Passionate about ethical hacking"],
         "quote": "At first, dreams seem impossible, then improbable, and eventually inevitable"
     }
 }
