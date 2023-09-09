@@ -11,7 +11,7 @@ curl -X GET \
     "id": "60603a5aaa037f0008ed81f9",
     "name": "Jesús Ángel Rodríguez Martínez",
     "email": "sudo.von.contact@gmail.com",
-    "username": "sudo-von",
+    "username": "sudo_von",
     "workplaces": [
         {
             "id": "649b478da7e8c4033849e8a7",
@@ -31,7 +31,7 @@ curl -X GET \
     ],
     "about": {
         "title": "Computer systems engineer",
-        "position": "Software developer",
+        "position": "Software engineer",
         "certifications": ["Certified ethical hacker and security professional (C|EHSP)"],
         "interests": ["Javascript fanatic", "Typescript enthusiast", "Passionate about ethical hacking"],
         "quote": "At first, dreams seem impossible, then improbable, and eventually inevitable"
