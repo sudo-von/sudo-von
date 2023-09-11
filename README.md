@@ -1,5 +1,7 @@
 <img src="svg/header.svg"  alt="Header image" />
 
+# To-do: Use the same component like my portfolio.
+
 ```javascript
 curl -X GET \
     -H "Content-Type: application/json" \
