@@ -3,7 +3,7 @@
 ```javascript
 curl -X GET \
     -H "Content-Type: application/json" \
-    "https://sudo-von.com/api/v1/user/username/sudo-von"
+    "http://sudo-von.com/api/v1/user/username/sudo-von"
 ```
 
 ```typescript
